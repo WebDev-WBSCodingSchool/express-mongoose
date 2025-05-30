@@ -2,7 +2,7 @@ export const getPosts = async (req, res) => {};
 
 export const createPost = async (req, res) => {
   const {
-    body: { title, content, userId }
+    body: { title, content, author }
   } = req;
 };
 
@@ -14,7 +14,7 @@ export const getPostById = async (req, res) => {
 
 export const updatePost = async (req, res) => {
   const {
-    body: { title, content, userId },
+    body: { title, content, author },
     params: { id }
   } = req;
 };

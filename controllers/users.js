@@ -1,29 +1,26 @@
-import asyncHandler from '../utils/asyncHandler.js';
-import ErrorResponse from '../utils/ErrorResponse.js';
+export const getUsers = async (req, res) => {};
 
-export const getUsers = asyncHandler(async (req, res) => {});
-
-export const createUser = asyncHandler(async (req, res) => {
+export const createUser = async (req, res) => {
   const {
     body: { firstName, lastName, email }
   } = req;
-});
+};
 
-export const getUserById = asyncHandler(async (req, res) => {
+export const getUserById = async (req, res) => {
   const {
     params: { id }
   } = req;
-});
+};
 
-export const updateUser = asyncHandler(async (req, res) => {
+export const updateUser = async (req, res) => {
   const {
     body: { firstName, lastName, email },
     params: { id }
   } = req;
-});
+};
 
-export const deleteUser = asyncHandler(async (req, res) => {
+export const deleteUser = async (req, res) => {
   const {
     params: { id }
   } = req;
-});
+};

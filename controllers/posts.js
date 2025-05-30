@@ -1,29 +1,26 @@
-import asyncHandler from '../utils/asyncHandler.js';
-import ErrorResponse from '../utils/ErrorResponse.js';
+export const getPosts = async (req, res) => {};
 
-export const getPosts = asyncHandler(async (req, res) => {});
-
-export const createPost = asyncHandler(async (req, res) => {
+export const createPost = async (req, res) => {
   const {
-    body: { title, content, userId }
+    body: { title, content, author }
   } = req;
-});
+};
 
-export const getPostById = asyncHandler(async (req, res) => {
+export const getPostById = async (req, res) => {
   const {
     params: { id }
   } = req;
-});
+};
 
-export const updatePost = asyncHandler(async (req, res) => {
+export const updatePost = async (req, res) => {
   const {
-    body: { title, content, userId },
+    body: { title, content, author },
     params: { id }
   } = req;
-});
+};
 
-export const deletePost = asyncHandler(async (req, res) => {
+export const deletePost = async (req, res) => {
   const {
     params: { id }
   } = req;
-});
+};

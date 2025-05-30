@@ -1,3 +1,4 @@
+import './db/index.js';
 import express from 'express';
 import postRouter from './routers/postRouter.js';
 import userRouter from './routers/userRouter.js';
